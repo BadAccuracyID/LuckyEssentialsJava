@@ -2,7 +2,6 @@ package id.luckynetwork.dev.lyrams.lej.managers;
 
 import id.luckynetwork.dev.lyrams.lej.LuckyEssentials;
 import id.luckynetwork.dev.lyrams.lej.callbacks.CanSkipCallback;
-import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.command.CommandSender;
@@ -39,7 +38,7 @@ public class ConfirmationManager {
             warnings.forEach(player::sendMessage);
         }
 
-        player.sendMessage(plugin.getMainConfigManager().getPrefix() + "§ePlease type §d/less confirm §eto confirm your action.");
+        player.sendMessage(plugin.getMainConfigManager().getPrefix() + "§ePlease type §a/confirm §eto confirm your action or &c/cancel &eto cancel your action.");
         this.confirmationMap.put(player, new ConfirmationData(callable));
     }
 
