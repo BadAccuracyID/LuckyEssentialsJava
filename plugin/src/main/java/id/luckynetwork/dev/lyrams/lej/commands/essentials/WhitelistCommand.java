@@ -210,7 +210,7 @@ public class WhitelistCommand extends CommandClass {
         }
 
         targets.forEach(target -> {
-            boolean whitelsited = plugin.getWhitelistManager().canJoin(target);
+            boolean whitelsited = plugin.getWhitelistManager().isWhitelisted(target);
 
             if (whitelsited) {
                 sender.sendMessage(plugin.getMainConfigManager().getPrefix() + "§d" + target.getName() + " §eis §awhitelisted.");

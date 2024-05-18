@@ -105,6 +105,10 @@ public class WhitelistManager {
         plugin.getWhitelistConfig().save();
     }
 
+    public boolean isWhitelisted(OfflinePlayer player) {
+        return this.whitelistDataList.stream().anyMatch(it -> it.check(player, this.checkMode));
+    }
+
     public boolean canJoin(OfflinePlayer player) {
         if (!this.enabled) {
             return true;
