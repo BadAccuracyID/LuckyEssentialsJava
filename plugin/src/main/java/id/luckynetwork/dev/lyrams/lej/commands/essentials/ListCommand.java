@@ -32,11 +32,11 @@ public class ListCommand extends CommandClass {
     private String formatPlayerName(Player player, ShowType showType) {
         switch (showType) {
             case ALL:
-                return "§7- §f" + player.getDisplayName() + " §a(" + player.getName() + ")";
+                return "§8└─ §a" + player.getDisplayName() + " §a(" + player.getName() + ")";
             case DISPLAY:
-                return "§7- §f" + player.getDisplayName();
+                return "§8└─ §a" + player.getDisplayName();
             case REAL:
-                return "§7- §f" + player.getName();
+                return "§8└─ §a" + player.getName();
         }
 
         return null;
