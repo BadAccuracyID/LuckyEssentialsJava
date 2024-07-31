@@ -10,19 +10,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-enum ListScope {
-    ALL,
-    NEARBY,
-    WORLD
-}
-
-enum ShowType {
-    ALL,
-    DISPLAY,
-    REAL
-}
-
 public class ListCommand extends CommandClass {
+
+    enum ListScope {
+        ALL,
+        NEARBY,
+        WORLD
+    }
+
+    enum ShowType {
+        ALL,
+        DISPLAY,
+        REAL
+    }
 
     public ListCommand() {
         super("list", Arrays.asList("who", "online"));
