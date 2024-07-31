@@ -142,9 +142,14 @@ public class LuckyEssentials extends JavaPlugin {
                     this.getLogger().info("Loaded version support v1_19_R1");
                     break;
                 }
+                case "v1_20_R1": {
+                    support = Class.forName("id.luckynetwork.dev.lyrams.lej.versionsupport.v1_20_R1.v1_20_R1");
+                    this.getLogger().info("Loaded version support v1_20_R1");
+                    break;
+                }
                 default: {
-                    support = Class.forName("id.luckynetwork.dev.lyrams.lej.versionsupport.v1_19_R1.v1_19_R1");
-                    this.getLogger().severe("Unknown server version! Using v1_19_R1 as fallback...");
+                    support = Class.forName("id.luckynetwork.dev.lyrams.lej.versionsupport.v1_20_R1.v1_20_R1");
+                    this.getLogger().severe("Unknown server version! Using v1_20_R1 as fallback...");
                     break;
                 }
             }

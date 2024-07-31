@@ -6,7 +6,7 @@ plugins {
 
 def pluginName = 'LuckyEssentials'
 group 'id.luckynetwork.dev.lyrams.lej'
-version '0.7.1-RELEASE'
+version '0.8.0-RELEASE'
 
 repositories {
     mavenCentral()
@@ -39,6 +39,7 @@ dependencies {
     extraLibs project(":version-support1_17")
     extraLibs project(":version-support1_18")
     extraLibs project(":version-support1_19")
+    extraLibs project(":version-support1_20")
     configurations.compileOnly.extendsFrom(configurations.extraLibs)
 }
 
